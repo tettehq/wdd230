@@ -16,11 +16,7 @@ header h1 {
     align-items: center;
 }
 
-h2 {
-    border-bottom: black solid 1px;
-}
-
-ul {
+ul li {
     list-style: initial;
 }
 
