@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap');
+
+body {
+    max-width: 320px;
+    border-radius: 3px;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+header h1 {
+    background-color: darkcyan;
+    padding: 2em;
+    color: white;
+}
+
+img {
+    float: right;
+}
+
+footer p {
+    background-color: darkcyan;
+    padding: 2em;
+    color: white;
+}
