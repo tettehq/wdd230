@@ -12,10 +12,6 @@ header {
     max-width: 100%;
     background-color: darkcyan;
     padding: 2em;
-    align-items: center;
-}
-
-h1 {
     color: white;
     text-align: center;
 }
@@ -33,5 +29,5 @@ footer {
     background-color: darkcyan;
     padding: 2em;
     color: white;
-    align-items: center;
+    text-align: center;
 }
