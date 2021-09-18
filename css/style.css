@@ -12,7 +12,7 @@ body {
 header {
     max-width: 100%;
     border-radius: 8px;
-    background-color: rgb(139, 95, 0);
+    background-color: rgb(139, 74, 0);
     padding: 4px;
     color: white;
     text-align: center;
@@ -40,8 +40,16 @@ img {
 footer {
     max-width: 100%;
     border-radius: 8px;
-    background-color: rgb(139, 95, 0);
+    background-color: rgb(139, 74, 0);
     padding: 2em;
     color: white;
     text-align: center;
+}
+
+footer p a {
+    color: rgb(159, 187, 2);
+}
+
+#currentdatetime {
+    color:rgb(190, 218, 32);
 }
