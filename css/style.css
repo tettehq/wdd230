@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap');
 
 body {
-    max-width: 1000px;
+    max-width: auto;
     border-radius: 3px;
     overflow: hidden;
     font-family: "Montserrat", sans-serif;
