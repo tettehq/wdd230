@@ -14,7 +14,14 @@ header h1 {
     padding: 2em;
     color: white;
     align-items: center;
-    font-size: larger;
+}
+
+h2 {
+    border-bottom: black solid 1px;
+}
+
+ul {
+    list-style: initial;
 }
 
 img {
