@@ -8,12 +8,15 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-header h1 {
+header {
     max-width: 100%;
     background-color: darkcyan;
     padding: 2em;
-    color: white;
     align-items: center;
+}
+
+h1 {
+    color: white;
 }
 
 ul li {
