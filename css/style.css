@@ -8,6 +8,7 @@ body {
 }
 
 header h1 {
+    max-width: 100%;
     background-color: darkcyan;
     padding: 2em;
     color: white;
@@ -17,7 +18,8 @@ img {
     float: right;
 }
 
-footer p {
+footer {
+    max-width: 100%;
     background-color: darkcyan;
     padding: 2em;
     color: white;
