@@ -6,7 +6,6 @@ body {
     border: transparent;
     border-radius: 30px;
     overflow: hidden;
-    font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -16,16 +15,26 @@ header {
     padding: 4px;
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
+}
+
+h1 {
+    font-family: 'Gluten', cursive;
 }
 
 h2 {
     padding: 10px;
     border-bottom: 1px solid #888;
+    font-family: 'Gluten', cursive;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 ol {
     list-style: initial;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 img {
