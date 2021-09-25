@@ -3,29 +3,29 @@
 body {
     margin: auto;
     max-width: 50%;
-    border: transparent;
     border-radius: 30px;
     overflow: hidden;
 }
 
-header {
+header, footer {
     max-width: 100%;
-    border-radius: 8px;
     background-color: rgb(139, 74, 0);
-    padding: 4px;
+    padding: 1em;
     color: white;
     text-align: center;
-    font-size: 25px;
 }
 
 h1 {
     font-family: 'Gluten', cursive;
+    font-size: 1.5em;
+    align-self: center;
 }
 
 h2 {
     padding: 10px;
     border-bottom: 1px solid #888;
     font-family: 'Gluten', cursive;
+    font-size: 1em;
 }
 
 p {
@@ -39,21 +39,8 @@ ol {
 
 img {
     max-width: 200px;
-    margin-top: -210px;
-    margin-right: 10px;
-    float: right;
-    border-radius: 8px;
-    box-shadow: 3px 3px 4px 4px rgba(136, 136, 136, 0);
 }
 
-footer {
-    max-width: 100%;
-    border-radius: 8px;
-    background-color: rgb(139, 74, 0);
-    padding: 2em;
-    color: white;
-    text-align: center;
-}
 
 footer p a {
     color: rgb(211, 223, 106);
