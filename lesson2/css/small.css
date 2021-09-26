@@ -1,0 +1,60 @@
+body {
+    max-width: 100%;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+img {
+    max-width: 90%;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+
+
+header, footer {
+    max-width: 100%;
+    background-color: rgb(139, 74, 0);
+    padding: 2em;
+    color: white;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Gluten', cursive;
+    text-align: center;
+}
+
+.principle {
+    border: 10px solid orangered;
+    border-radius: 20px;
+}
+
+#samples {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    background-color: rgb(142, 163, 163);
+    justify-items: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1em;
+}
+
+li, p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 1em;
+}
+
+footer p a {
+    color: rgb(211, 223, 106);
+}
+
+#currentdatetime {
+    color:rgb(14, 250, 6);
+}
