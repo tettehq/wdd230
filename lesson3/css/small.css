@@ -29,6 +29,7 @@ strong {
 }
 
 .site-plan-nav a:link {
+    font-size: 1.5em;
     color: #FFFFFF;
     text-decoration: none;
 }
