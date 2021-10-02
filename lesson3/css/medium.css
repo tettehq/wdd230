@@ -1,0 +1,32 @@
+@media  only screen and (min-width: 42em) {
+    html {
+        background-color: #06BEE1;
+    }
+    
+    body {
+        max-width: 70%;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        padding: 1em;
+    }
+
+    .site-plan-nav ul {
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .site-plan-nav ul li {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+
+    #example ul {
+        display: flex;;
+        border-radius: 10px;
+    }
+    #example ul li {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+    
+}
