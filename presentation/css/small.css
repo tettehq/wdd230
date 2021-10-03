@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap');
+
+body {
+    margin: auto;
+    max-width: 70%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+header, footer {
+    max-width: 100%;
+    background-color: rgb(139, 74, 0);
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Gluten', cursive;
+    font-size: 1.5em;
+}
+
+h2 {
+    padding: 10px;
+    border-bottom: 1px solid #888;
+    font-family: 'Gluten', cursive;
+    font-size: 1em;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ol {
+    list-style: initial;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+img {
+    max-width: 200px;
+}
+
+
+footer p a {
+    color: rgb(211, 223, 106);
+}
+
+#currentdatetime {
+    color:rgb(14, 250, 6);
+}
+
+#video {
+    text-align: center;
+}
