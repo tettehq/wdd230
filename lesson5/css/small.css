@@ -87,10 +87,6 @@ nav a:active {
     border-radius: 10px;
 }
 
-.active:visited {
-    color: white;
-    border-bottom: 2px solid white;
-}
 
 .hide {
     display: none;
