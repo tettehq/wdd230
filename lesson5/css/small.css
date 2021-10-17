@@ -66,8 +66,7 @@ nav a:link {
 }
 
 nav a:visited {
-    color: white;
-    border-bottom: 2px solid white;
+    color: #2533b2;
 }
 
 nav a:hover {    
@@ -86,6 +85,11 @@ nav a:active {
     color: #FFFFFF;
     background-color: #1768AC;
     border-radius: 10px;
+}
+
+.active:visited {
+    color: white;
+    border-bottom: 2px solid white;
 }
 
 .hide {
@@ -152,7 +156,7 @@ footer {
     display: inline;
 }
 
-#announcement {
+.announcement {
     text-align: left;
     background-color: sandybrown;
     font-size: 2em;
