@@ -13,13 +13,13 @@ function toggleLink() {
     document.getElementById('link').classList.toggle("active");
 }
 
-document.getElementById('link1').addEventListener('click', toggleLink)
+/*document.getElementById('link1').addEventListener('click', toggleLink)
 document.getElementById('link2').addEventListener('click', toggleLink)
 document.getElementById('link3').addEventListener('click', toggleLink)
 document.getElementById('link4').addEventListener('click', toggleLink)
 document.getElementById('link5').addEventListener('click', toggleLink)
 document.getElementById('link6').addEventListener('click', toggleLink)
-
+*/
 let date = new Date()
 
 if (date.getDay() == 6) {
