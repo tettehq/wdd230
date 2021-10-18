@@ -1,9 +1,6 @@
-@media  only screen and (min-width: 60em) {
-    html {
-        background-color: #06BEE1;
-    }
+@media  only screen and (min-width: 50em) {
     
-    body {
+    /*body {
         max-width: 70%;
         margin: 0 auto;
         background-color: #FFFFFF;
@@ -12,7 +9,7 @@
 
     li, p {
         font-size: 1.2em;
-    }
+    }*/
 
     nav button {
         display: none;
@@ -26,6 +23,10 @@
 
     nav ul li {
         flex: 1;
+    }
+
+    .forecast {
+        display: block;
     }
 
     .days, .weather  {

@@ -3,23 +3,23 @@ function toggleMenu() {
 }
 
 
-let d = new Date(Date.UTC(2021, 9, 9, 3, 0, 0));
+let d = new Date();
 
 let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
 document.getElementById('currentdate').textContent = d.toLocaleDateString(undefined, options);
 
-function toggleLink() {
-    document.getElementById('link').classList.toggle("active");
-}
+// let toggleClass = (id) => {
+//     document.getElementById(id).classList.toggle("active");
+// }
 
-/*document.getElementById('link1').addEventListener('click', toggleLink)
-document.getElementById('link2').addEventListener('click', toggleLink)
-document.getElementById('link3').addEventListener('click', toggleLink)
-document.getElementById('link4').addEventListener('click', toggleLink)
-document.getElementById('link5').addEventListener('click', toggleLink)
-document.getElementById('link6').addEventListener('click', toggleLink)
-*/
+// document.getElementById('link1').addEventListener('click', toggleClass('link1'));
+// document.getElementById('link2').addEventListener('click', toggleClass('link2'));
+// document.getElementById('link3').addEventListener('click', toggleClass('link3'));
+// document.getElementById('link4').addEventListener('click', toggleClass('link4'));
+// document.getElementById('link5').addEventListener('click', toggleClass('link5'));
+// document.getElementById('link6').addEventListener('click', toggleClass('link6'));
+
 let date = new Date()
 
 if (date.getDay() == 6) {
