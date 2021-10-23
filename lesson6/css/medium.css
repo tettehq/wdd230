@@ -1,0 +1,59 @@
+@media  only screen and (min-width: 50em) {
+    
+    /*body {
+        max-width: 70%;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        padding: 1em;
+    }
+
+    li, p {
+        font-size: 1.2em;
+    }*/
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+        flex: 1 1 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    nav ul li {
+        flex: 1;
+    }
+
+    .forecast {
+        display: block;
+    }
+
+    .days, .weather  {
+        display: flex;
+        flex: 1 1 100%;
+        list-style-type: none;
+        border: 1px solid #000000;
+        color: white;
+        background-color: #1768AC;
+    }
+
+    .days li, .weather li {
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .contact {
+        overflow: auto;
+    }
+
+    .contact .map {
+        display: inline;
+        float: left;
+        margin-right: 15px;
+    }
+    
+    .contact ul {
+        display: block;
+    }
+}

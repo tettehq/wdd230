@@ -1,0 +1,166 @@
+
+h1, h2, h3 {
+    font-family: 'Gluten', cursive;
+    font-size: 2em;
+}
+
+li, p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 2em;
+}
+
+header {
+    display: flex;
+    flex: 1 1 100%;
+    background-color: #1768AC;
+    color: white;
+    text-align: center;
+}
+
+.name-box {
+    margin-top: 5%;
+}
+
+nav button {
+    margin: 2rem 2%;
+    border: none;
+    font-size: 1.6rem;
+    background-color: #1768AC;
+    border-radius: 3px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #FFFFFF;
+    border: 10px solid #1768AC;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 2em 2%;
+    text-decoration: none;
+    border-top: 1px solid #2541B2;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #1768AC;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #2533b2;
+}
+
+nav a:hover {    
+    color: #FFFFFF;
+    background-color: #1768AC;
+    border-radius: 10px;
+}
+
+nav a:active {
+    color: #FFFFFF;
+    background-color: #042846;
+    border-radius: 10px;
+}
+
+.active {
+    color: #FFFFFF;
+    background-color: #1768AC;
+    border-radius: 10px;
+}
+
+
+.hide {
+    display: none;
+}
+
+main {
+    max-width: 85%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.content {
+    background-color: rgba(42, 136, 180, 0.308);
+    padding: 2em;
+    margin: 2em 1%;
+    border: 1px dashed #1768AC;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+footer {
+    color: white;
+    max-width: 100%;
+    background-color: #1768AC;
+    padding: 1em;
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    background-color: rgba(19, 146, 87, 0.733);
+    font-size: 1.1rem;
+    padding: 1.5em;
+}
+
+.weather-summary ul {
+    list-style: none;
+}
+
+.forecast {
+    display: none;
+}
+.article {
+    overflow: auto;
+}
+
+.article > img {
+    max-width: 30%;
+    float: right;
+}
+
+.contact .map {
+    display: none;
+}
+
+.contact ul {
+    list-style-type: none;
+    display: inline;
+}
+
+#announcement {
+    text-align: center;
+    background-color: sandybrown;
+    font-size: 2em;
+    font-family: 'Gluten', cursive;
+}

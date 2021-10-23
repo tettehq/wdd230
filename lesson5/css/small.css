@@ -153,8 +153,8 @@ footer {
     display: inline;
 }
 
-.announcement {
-    text-align: left;
+#announcement {
+    text-align: center;
     background-color: sandybrown;
     font-size: 2em;
     font-family: 'Gluten', cursive;
