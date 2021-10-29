@@ -1,0 +1,18 @@
+img[data-src] {
+    filter: blur(0.2em);
+}
+  
+img {
+    filter: blur(0em);
+    transition: filter 5s;
+}
+
+picture {
+    display: block;
+    margin: 1.2em;
+}
+
+body {
+    font-family: "gluten", cursive;
+    text-align: center;
+}

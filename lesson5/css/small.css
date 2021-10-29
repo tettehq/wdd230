@@ -80,7 +80,7 @@ nav a:active {
 }
 
 .active {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     background-color: #1768AC;
     border-radius: 10px;
 }
@@ -96,7 +96,7 @@ main {
     padding-top: 2em;
 }
 
-main div {
+.content {
     background-color: rgba(42, 136, 180, 0.308);
     padding: 2em;
     margin: 2em 1%;
@@ -115,16 +115,17 @@ footer {
 
 .banner {
     position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-.banner > img {
-    max-width: 100%;
+.banner img {
+    width: 100%;
+    object-fit: fill;
 }
 
 .weather-summary {
-    position: absolute;
-    top: 20px;
-    left: 50px;
     background-color: rgba(19, 106, 146, 0.308);
 }
 
@@ -142,6 +143,8 @@ footer {
 .article > img {
     max-width: 30%;
     float: right;
+    margin-left: 2%;
+    margin-bottom: 2%;
 }
 
 .contact .map {
