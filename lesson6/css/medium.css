@@ -62,4 +62,15 @@
         top: 20px;
         left: 50px;
     }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+    }
+
+    .gallery picture {
+        margin: 0;
+        width: 100%;
+    }
 }

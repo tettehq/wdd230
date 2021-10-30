@@ -9,4 +9,10 @@
         background-color: #FFFFFF;
         padding: 1em;
     }
+    
+    .gallery {
+        padding: 2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5em;
+    }
 }
