@@ -11,7 +11,7 @@ const displayImages = (image) => {
       displayImages(img);
   });*/
   const imageOptions = {
-      threshold: 0,
+      threshold: 1,
       rootMargin: "0px 0px 75px 0px"
   };
   
@@ -34,3 +34,21 @@ const displayImages = (image) => {
           displayImages(img);
       });
   }
+
+
+let lastVisit
+const daysToMilliseconds = 8640000;
+
+if ("lastVisit" in localStorage) {
+    lastVisit = localStorage.getItem("lastVisit");
+}
+else {
+    lastVisit = Date.now();
+}
+
+let timeDifference = Math.round((Date.now() - lastVisit)/daysToMilliseconds);
+localStorage.lastVisit = Date.now();
+
+console.log(timeDifference)
+
+document.querySelector(".timeDifference").textContent = timeDifference;

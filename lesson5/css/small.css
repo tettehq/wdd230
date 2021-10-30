@@ -162,3 +162,8 @@ footer {
     font-size: 2em;
     font-family: 'Gluten', cursive;
 }
+
+.map {
+    width: 350px;
+    object-fit: contain;
+}
