@@ -4,17 +4,14 @@ function getWindchill() {
     let temperature = document.querySelector(".temp").textContent
     let windSpeed = document.querySelector(".speed").textContent
 
-    chill = Math.round(35.74 + (0.6215 * parseInt(temperature)) - (35.75 * parseInt(windSpeed)**0.16) + (0.4275 * parseInt(temperature) * parseInt(windSpeed)**0.16))
     
-    if (parseInt(temperature) > 50) {
-        return "N/A"
-    }
-
-    else if (parseInt(windSpeed) < 3) {
+    
+    if (parseInt(temperature) > 50 && parseInt(windSpeed) < 3) {
         return "N/A"
     }
 
     else {
+        let chill = Math.round(35.74 + (0.6215 * parseInt(temperature)) - (35.75 * parseInt(windSpeed)**0.16) + (0.4275 * parseInt(temperature) * parseInt(windSpeed)**0.16))
         return `${chill}°F`
     }
 }
