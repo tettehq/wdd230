@@ -15,4 +15,9 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1.5em;
     }
+
+    /*storm center page*/
+    #form {
+        max-width: 60%;
+    }
 }

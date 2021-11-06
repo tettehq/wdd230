@@ -73,4 +73,9 @@
         margin: 0;
         width: 100%;
     }
+
+    /*storm center page*/
+    #form {
+        max-width: 70%;
+    }
 }
