@@ -78,4 +78,30 @@
     #form {
         max-width: 70%;
     }
+    
+    /*home-page*/
+    .home-page .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .home-page article {
+        display: block;
+    }
+
+    .home-page article figure {
+        width: 100%;
+        margin: 0;
+    }
+
+    .articles article img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .articles .town-data {
+        grid-row: 1;
+        justify-self: center;
+    }
 }
