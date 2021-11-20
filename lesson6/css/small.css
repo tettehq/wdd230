@@ -113,6 +113,14 @@ footer {
     text-align: center;
 }
 
+footer a {
+    text-decoration: none;
+}
+
+footer a:link {
+    color: white !important;
+}
+
 .banner {
     position: relative;
     margin: 0;

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Idaho page for clearer skies site">
+    <title>Preston Idaho</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../lesson6/css/normalize.css">
+    <link rel="stylesheet" href="../lesson6/css/small.css">
+    <link rel="stylesheet" href="../lesson6/css/medium.css">
+    <link rel="stylesheet" href="../lesson6/css/large.css">
+</head>
+<body>
+    <div id="announcement"></div>
+    <header>
+        <img src="../lesson6/images/61488_weather_24_sun_icon.png" alt="Profile Photo">
+        <div class="name-box">
+            <h1>Clearer Skies</h1>
+            <div id="motto"><p>Where the sky is always clear</p></div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;<span>Menu</span></button>
+        <ul id="primary-nav" class="hide">
+            <li><a id="link1" class="" href="../lesson9/homepage/index.html">Home</a></li>
+            <li><a id="link2" class="active" href="#">Preston</a></li>
+            <li><a id="link3" class="" href="#">Soda Springs</a></li>
+            <li><a id="link4" class="" href="#">Fish Haven</a></li>
+            <li><a id="link5" class="" href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a id="link6" class="" href="../lesson7/gallery/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <h2>Preston Idaho</h2>
+    <div class="banner">
+        <picture>
+            <source media="(max-width: 517px)" srcset="../lesson6/images/wdd230_image_franklinOriginal_500.jpg">
+            <source media="(max-width: 797px)" srcset="../lesson6/images/wdd230_image_franklinOriginal_780.jpg">
+            <source media="(max-width: 817px)" srcset="../lesson6/images/wdd230_image_franklinOriginal_800.jpg">
+            <img src="../lesson6/images/wdd230_image_franklinOriginal_1100.jpg" alt="hero image">
+        </picture>
+        <div class="weather-summary">
+            <h2>Weather Summary</h2>
+            <ul>
+                <li>Currently: <span class="currently">Cloudy</span></li>
+                <li>High: <span class="temp">24</span>°F</li>
+                <li>Wind Chill: <span class="windChill"></span></li>
+                <li>Humidity: <span class="humidity">71%</span></li>
+                <li>Wind Speed: <span class="speed">7</span> mph</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="content forecast">
+            <h2>Five Day Forecast</h2>
+            <ul class="days">
+                <li class="day1"></li>
+                <li class="day2"></li>
+                <li class="day3"></li>
+                <li class="day4"></li>
+                <li class="day5"></li>
+            </ul>
+            <ul class="weather">
+                <li><img class="image1" width="50"></li>
+                <li><img class="image2" width="50"></li>
+                <li><img class="image3" width="50"></li>
+                <li><img class="image4" width="50"></li>
+                <li><img class="image5" width="50"></li>
+            </ul>
+            <ul class="weather">
+                <li class="data1"> °F</li>
+                <li class="data2"> °F</li>
+                <li class="data3"> °F</li>
+                <li class="data4"> °F</li>
+                <li class="data5"> °F</li>
+            </ul>
+        </div>
+        <div class="content article">
+            <img src="../lesson6/images/article_image.jpg" alt="article image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita laudantium provident reiciendis sit facere libero repellat veritatis velit, explicabo molestias labore harum incidunt nostrum quis autem tempora, dolore quidem rem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio libero quaerat ducimus deleniti perspiciatis nisi quidem reiciendis aut molestiae beatae quibusdam repellendus, perferendis ad, architecto reprehenderit voluptates illo harum. Accusantium! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ad dolorem obcaecati quisquam inventore exercitationem accusamus laudantium nulla omnis minus veniam esse earum corporis, provident accusantium totam alias labore distinctio.</p>
+        </div>
+        <div class="content contact">
+            <a href="https://www.google.com/maps/place/Preston,+ID+83263,+USA/@42.3609885,-111.8654167,10.25z/data=!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173" target="blank"><img class="map" src="../lesson6/images/map.jpg" alt="map"></a>
+            Contact us on:
+            <ul>                
+                <li><a href=""><img src="../lesson6/images/ig-logo.png" alt="ig-logo" width="50"> @clearer_skies</a></li>
+                <li><a href=""><img src="../lesson6/images/whatsapp-logo.png" alt="whatsapp-logo" width="50"> +1 44097882</a></li>
+                <li><a href=""><img src="../lesson6/images/facebook-logo-503.png" alt="cb-logo" width="50"> clearer skies official</a></li>
+            </ul> 
+        </div>
+    </main>
+    <footer>
+        <p >&copy; Clearer Skies | <a href="https://openweathermap.org/" target="_blank">https://openweathermap.org/</a> | Aaron Tetteh Quarshie</p>
+        <p id="currentdate"></p>
+    </footer>
+    <script src="../lesson6/js/myscript.js"></script>
+    <script src="../lesson6/js/windchill.js"></script>
+    <script src="js/preston-10.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Gluten', 'Josefin Sans']
+            }
+        });
+    </script>
+</body>
+</html>
