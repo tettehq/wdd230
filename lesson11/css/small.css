@@ -1,0 +1,320 @@
+
+h1, h2, h3, button {
+    font-family: 'Gluten', cursvie;
+}
+
+li, p, .gallery figcaption {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.5em;
+}
+ header img {
+     object-fit: contain;
+ }
+
+header {
+    display: flex;
+    flex: 1 1 100%;
+    background-color: #1768AC;
+    color: white;
+}
+
+
+
+nav button {
+    margin: 2rem 2%;
+    border: none;
+    font-size: 1.6rem;
+    background-color: #1768AC;
+    border-radius: 3px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #FFFFFF;
+    border: 10px solid #1768AC;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1em 2%;
+    text-decoration: none;
+    border-top: 1px solid #2541B2;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #1768AC;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #2533b2;
+}
+
+nav a:hover {    
+    color: #FFFFFF;
+    background-color: #1768AC;
+    border-radius: 10px;
+}
+
+nav a:active {
+    color: #FFFFFF;
+    background-color: #042846;
+    border-radius: 10px;
+}
+
+.active {
+    color: #FFFFFF !important;
+    background-color: #1768AC;
+    border-radius: 10px;
+}
+
+
+.hide {
+    display: none;
+}
+
+main {
+    max-width: 85%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.content {
+    background-color: rgba(42, 136, 180, 0.308);
+    padding: 2em;
+    margin: 2em 1%;
+    border: 1px dashed #1768AC;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+footer {
+    color: white;
+    max-width: 100%;
+    background-color: #1768AC;
+    padding: 1em;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:link {
+    color: white !important;
+}
+
+.banner {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.weather-summary {
+    background-color: rgba(19, 146, 87, 0.733);
+    font-size: 1.1rem;
+    padding: 1em;
+}
+
+.weather-summary ul {
+    list-style: none;
+}
+
+.forecast {
+    display: none;
+}
+.article {
+    overflow: auto;
+}
+
+.article > img {
+    max-width: 30%;
+    float: right;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.contact .map {
+    display: none;
+}
+
+.contact ul {
+    list-style-type: none;
+    display: inline;
+}
+
+#announcement {
+    text-align: center;
+    background-color: sandybrown;
+    font-size: 2em;
+    font-family: 'Gluten', cursive;
+}
+
+.map {
+    width: 350px;
+    object-fit: contain;
+}
+
+/*gallery-page*/
+#gallery-page h2 {
+    color: #1768AC;
+}
+
+#gallery-page h3 {
+    color: #1768AC;
+    font-size: 1.5em;
+}
+
+.gallery img[data-src] {
+    filter: blur(0.2em);
+}
+  
+.gallery img {
+    filter: blur(0em);
+    transition: filter 2s;
+    max-width: 100%;
+}
+
+.gallery figure {
+    display: block;
+    margin: 2em auto;
+    background-color: white;
+    box-shadow: 0px 0px 5px #53575a;
+    width: 70%;
+    text-align: center;
+}
+
+.gallery figure:hover {
+    box-shadow: 0px 0px 50px #53575a;
+}
+
+#gallery {
+    text-align: center;
+}
+
+/*storm center page*/
+#form {
+    font-family: "Josefin-Sans", sans-serif;
+    font-size: 1em;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#form .label, fieldset {
+    display: block;
+    margin: 1.5em
+}
+
+#form .normalinput, #form textarea {
+    display: block;
+    width: 100%;
+}
+
+fieldset {
+    border-color: #1768AC;
+    border-radius: 10px;
+}
+#form legend {
+     color: #1768AC;
+ }
+
+#form #submit {
+    width: auto;
+    font-size: 1.5em;
+    background-color: #1768AC;
+    color: white;
+}
+
+#form .radio {
+    display: block;
+    margin: 1em 0;
+}
+
+#form textarea {
+    min-height: 100px;
+}
+
+/*home-page*/
+.home-page article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0.5em;
+    background-color: rgba(42, 136, 180, 0.308);
+    margin: 5% 0;
+}
+
+.home-page article img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    justify-self: center;
+    align-self: center;
+}
+
+.home-page article:nth-child(odd) figure {
+	grid-column: 1;
+}
+
+article:nth-child(odd) .town-data {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.extra img {
+    float: right;
+    width: 50%;;
+    object-fit: contain;
+    margin: 5%;
+}
+
+.extra {
+    overflow: auto;
+}
+
+#events ul {
+    max-width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+    background-color: burlywood;
+    border: 10px solid rgb(187, 139, 75);
+}
+
+#events ul li {
+    font-size: 1.5em;
+    margin: 5% auto;
+}
+
+.conceal {
+    display: none;
+}
+
+#eventsButton {
+    max-width: 50%;
+    margin: 2% 25%;
+    font-size: 2em;
+    background-color: #1768AC;
+    color: white;
+    border-radius: 8px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Storm center page for clearer skies site">
+    <title>Storm Center</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body id="gallery-page">
+    <div id="announcement"></div>
+    <header>
+        <img src="images/61488_weather_24_sun_icon.png" alt="Profile Photo">
+        <div class="name-box">
+            <h1>Clearer Skies</h1>
+            <div id="motto"><p>Where the sky is always clear</p></div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;<span>Menu</span></button>
+        <ul id="primary-nav" class="hide">
+            <li><a id="link1" class="" href="index.html">Home</a></li>
+            <li><a id="link2" class="" href="preston.html">Preston</a></li>
+            <li><a id="link3" class="" href="sodasprings.html">Soda Springs</a></li>
+            <li><a id="link4" class="" href="fishhaven.html">Fish Haven</a></li>
+            <li><a id="link5" class="active" href="#">Storm Center</a></li>
+            <li><a id="link6" class="" href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <h2>Storm Center</h2>
+    <h3>Number of days since last visit: <span class="timeDifference"></span></h3>
+    <main class="form-area">
+        <form name="storm-report" id="form">
+            <fieldset class="itemgroup">
+                <legend>Contact Information</legend>
+                <label for="fullname" class="label">Full name:
+                    <input class="normalinput" type="text" pattern="([\s*A-Za-z]){5,}" id="fullname" name="fullname" placeholder="Full name">
+                </label>
+                <label for="email" class="label">Email:
+                    <input class="normalinput" type="email" id="email" name="email" placeholder="johndoe@anon.com">
+                </label>
+                <label for="pnumber" class="label">Phone number:
+                    <input class="normalinput" type="tel" id="pnumber" name="phone-number" required>
+                </label>
+                <label for="zipcode" class="label">Zip code:
+                    <input class="normalinput" type="number" id="zipcode" name="zip-code" required>
+                </label>
+            </fieldset>
+            <fieldset class="itemgroup">
+                <legend>Storm Information</legend>
+                <label for="stormdate" class="label">Storm date:
+                    <input class="normalinput" type="date" id="stormdate" name="storm-date">
+                </label>
+                <label for="stormtype" class="label">Storm type:
+                    <input class="normalinput" list="storm-list" id="stormtype" name="storm-type">
+                    <datalist id="storm-list">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+                <label for="stormseverity" class="label">Storm severity: &nbsp;&nbsp;&nbsp;
+                    <input class="normalinput" type="range" name="stormseverity" id="stormseverity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustStormSeverity(this.value)" onchange="adjustStormSeverity(this.value)">
+                    <span id="stormseverityvalue">5</span>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                </label>
+                <div class="label">Are you in danger?
+                    <label class="radio">
+                        <input type="radio" name="dangerlevel" value="Yes"> Yes
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="dangerlevel" value="No"> No
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="dangerlevel" value="Maybe"> Maybe
+                    </label>
+                </div>
+                <label for="comments" class="label">Additional info
+                    <textarea name="comments" id="comments" placeholder="Add any additional comments here"></textarea>
+                </label>
+            </fieldset>
+            <label class="label">
+                <input id="submit" type="submit" name="storm-report" value="submit" formaction="./thankyou.html" formtarget="_blank">
+            </label>
+        </form>
+    </main>
+    <footer>
+        <p >&copy; Clearer Skies | Attributions | Aaron Tetteh Quarshie</p>
+        <p id="currentdate"></p>
+    </footer>
+    <script src="js/myscript.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/storm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Gluten', 'Josefin Sans']
+            }
+        });
+    </script>
+</body>
+</html>

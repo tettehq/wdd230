@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Soda Springs page for clearer skies site">
+    <title>Soda Springs</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div id="announcement"></div>
+    <header>
+        <img src="images/61488_weather_24_sun_icon.png" alt="Profile Photo">
+        <div class="name-box">
+            <h1>Clearer Skies</h1>
+            <div id="motto"><p>Where the sky is always clear</p></div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;<span>Menu</span></button>
+        <ul id="primary-nav" class="hide">
+            <li><a id="link1" class="" href="index.html">Home</a></li>
+            <li><a id="link2" class="" href="preston.html">Preston</a></li>
+            <li><a id="link3" class="active" href="#">Soda Springs</a></li>
+            <li><a id="link4" class="" href="fishhaven.html">Fish Haven</a></li>
+            <li><a id="link5" class="" href="stormcenter.html">Storm Center</a></li>
+            <li><a id="link6" class="" href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <h2>Preston Idaho</h2>
+    <div class="banner">
+        <picture>
+            <source media="(max-width: 517px)" srcset="images/hero_image_500.jpg">
+            <source media="(max-width: 797px)" srcset="images/hero_image_780.jpg">
+            <source media="(max-width: 817px)" srcset="images/hero_image_800.jpg">
+            <img src="images/hero_image_1100.jpg" alt="hero image">
+        </picture>
+        <div class="weather-summary">
+            <h2>Weather Summary</h2>
+            <ul>
+                <li>Currently: <span class="currently"></span></li>
+                <li>High: <span class="temp"></span>°F</li>
+                <li>Wind Chill: <span class="windChill"></span></li>
+                <li>Humidity: <span class="humidity"></span>%</li>
+                <li>Wind Speed: <span class="speed"></span> mph</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="content forecast">
+            <h2>Five Day Forecast</h2>
+            <ul class="days">
+                <li class="day1"></li>
+                <li class="day2"></li>
+                <li class="day3"></li>
+                <li class="day4"></li>
+                <li class="day5"></li>
+            </ul>
+            <ul class="weather">
+                <li><img class="image1" width="50"></li>
+                <li><img class="image2" width="50"></li>
+                <li><img class="image3" width="50"></li>
+                <li><img class="image4" width="50"></li>
+                <li><img class="image5" width="50"></li>
+            </ul>
+            <ul class="weather">
+                <li class="data1"> °F</li>
+                <li class="data2"> °F</li>
+                <li class="data3"> °F</li>
+                <li class="data4"> °F</li>
+                <li class="data5"> °F</li>
+            </ul>
+        </div>
+        <div class="content article">
+            <img src="images/sodasprings-article-image.jpg" alt="article image">
+            <h2>History</h2>
+            <p>The city is named for the hundreds of natural springs of carbonated water that are located in and around the city.[6] The springs were well known to Native Americans and were a famous landmark along the Oregon Trail in the middle 19th century. Today the city is also known as the location of the Soda Springs Geyser, which was unleashed in 1934 when "town fathers" were looking for hot water for a "hot pool" bathing attraction. Instead they drilled into a chamber of highly pressurized carbon dioxide gas and cold water and the geyser was released. After running for weeks, and flooding the downtown area, it was capped and manually released when requested as a tourist attraction. Now it is let loose every hour on the hour by a timed release valve. Its height and volume have not decreased after many years. There are viewing platforms at either end of the travertine mound where the geyser erupts. Interpretive signs are located on the platforms explaining this phenomenon. Soda Springs is also the location of one of the Ground Observer Corps sites...(<a href="https://en.wikipedia.org/wiki/Soda_Springs,_Idaho#:~:text=The%20city%20is,Observer%20Corps%20sites." target="_blank">Click here to read more</a>)</p>
+        </div>
+        <div>
+            <button id="eventsButton" onclick="toggleEvents()">Upcoming Events</button>
+            <div id="events" class="conceal"></div>
+        </div>
+        <div class="content contact">
+            <a href="https://www.google.com/maps/place/Soda+Springs,+ID+83276,+USA/@42.6607803,-111.5873989,14z/data=!4m5!3m4!1s0x8755968bb0047ae5:0x9d3970a1a6df8e12!8m2!3d42.6543652!4d-111.6046687" target="blank"><img class="map" src="images/sodasprings-map.jpg" alt="map"></a>
+            Contact us on:
+            <ul>                
+                <li><a href=""><img src="images/ig-logo.png" alt="ig-logo" width="50"> @clearer_skies</a></li>
+                <li><a href=""><img src="images/whatsapp-logo.png" alt="whatsapp-logo" width="50"> +1 44097882</a></li>
+                <li><a href=""><img src="images/facebook-logo-503.png" alt="cb-logo" width="50"> clearer skies official</a></li>
+            </ul> 
+        </div>
+    </main>
+    <footer>
+        <p >&copy; Clearer Skies | <a href="https://openweathermap.org/" target="_blank">https://openweathermap.org/</a> | Aaron Tetteh Quarshie</p>
+        <p id="currentdate"></p>
+    </footer>
+    <script src="js/myscript.js"></script>
+    <script src="js/soda-springs_weather.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Gluten', 'Josefin Sans']
+            }
+        });
+    </script>
+</body>
+</html>
