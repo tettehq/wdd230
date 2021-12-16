@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Chamber of commerce site">
+    <title>Kpone Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/site-logo.png" alt="logo">
+        <div class="nameBox">
+            <h1>Kpone Chamber of Commerce</h1>
+            <h3>The largest business family in the region</h3>
+        </div>
+    </header>
+    <nav>
+        <button id="openMenu" class="" onclick="toggleMenu()">&#9776;<span>Menu</span></button>
+        <button id="closeMenu" class="hide" onclick="toggleMenu()">X</button>
+        <ul id="primary-nav" class="hide">
+            <li><a id="link1" class="" href="index.html">Home</a></li>
+            <li><a id="link2" class="" href="kpone.html">Kpone</a></li>
+            <li><a id="link3" class="" href="join.html">Join</a></li>
+            <li><a id="link4" class="" href="directory.html">Directory</a></li>
+            <li><a id="link5" class="active" href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form name="contactus" id="form">
+            <fieldset class="itemgroup">
+                <legend>Contact Us</legend>
+                <label for="name" class="label">Name:
+                    <input class="normalinput" type="text" pattern="\w*" id="name" name="name" placeholder="Name" required>
+                </label>
+                <label for="email" class="label">Email:
+                    <input class="normalinput" type="email" id="email" name="email" placeholder="johndoe@anon.com">
+                </label>
+                <label for="pnumber" class="label">Phone number:
+                    <input class="normalinput" type="tel" id="pnumber" name="phone-number" required>
+                </label>
+                <label for="comments" class="label">Additional info:
+                    <textarea name="comments" id="comments" placeholder="Add any additional comments here"></textarea>
+                </label>
+                <label class="label">
+                    <input id="submit" type="submit" name="storm-report" value="submit" formaction="./thankyou.html" formtarget="_blank">
+                </label>
+            </fieldset>
+        </form>
+        <div id="contactSection">
+            <a id="map" href="https://goo.gl/maps/mmUJchdEMqqSBvgs8" target="_blank"><img src="images/kpone-map.jpg"></a>
+            <div id="socialBox">
+                <div class="social">
+                    <img src="images/location-logo.png"> Head Office: No. 62, Lakoitey St. Shanghai, Kpone
+                </div>
+                <div class="social">
+                    <img src="images/mail-logo.png">Mail us at: <a href="https://mail.yahoo.com/" target="_blank">kcc@yahoo.com</a>
+                </div>
+                <div class="social">
+                    <img src="images/whatsapp-logo.png"> call/whatsApp us on: <a href="h">+23330244566/ +2335454998</a>
+                </div>
+                <div class="social">
+                    <img src="images/facebook-logo.png"> Follow us on: <a href="https://facebook.com/" target="_blank">kponechamberofcommerce</a>
+                </div>
+            </div>
+            <div id="actionBox">
+                <p>Are you an upcoming business owner? Or have you been a player in the business game for a long time. Well, no matter how long your business has been around, we are ever ready to welcome you into our rapidly growing family. CLick the button below to join us now!</p>
+                <a href="join.html"><button>Join</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p >&copy; <span id="currentyear">currentyear</span> | Aaron Quarshie | Ghana | <a id="contact" href="attributions.html" target="blank">Attributions</a></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="js/join.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Gluten', 'Josefin Sans']
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Chamber of commerce site">
+    <title>Kpone Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/site-logo.png" alt="logo">
+        <div class="nameBox">
+            <h1>Kpone Chamber of Commerce</h1>
+            <h3>The largest business family in the region</h3>
+        </div>
+    </header>
+    <nav>
+        <button id="openMenu" class="" onclick="toggleMenu()">&#9776;<span>Menu</span></button>
+        <button id="closeMenu" class="hide" onclick="toggleMenu()">X</button>
+        <ul id="primary-nav" class="hide">
+            <li><a id="link1" class="active" href="index.html">Home</a></li>
+            <li><a id="link2" class="" href="kpone.html">Kpone</a></li>
+            <li><a id="link3" class="" href="join.html">Join</a></li>
+            <li><a id="link4" class="" href="directory.html">Directory</a></li>
+            <li><a id="link5" class="" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="bannerArea">
+        <picture>
+            <source media="(max-width: 517px)" srcset="images/kpone-banner1_500.jpg">
+            <source media="(max-width: 817px)" srcset="images/kpone-banner1_800.jpg">
+            <img src="images/kpone-banner1.jpeg" alt="hero image">
+        </picture>
+        <picture>
+            <source media="(max-width: 517px)" srcset="images/kpone-banner2_500.jpg">
+            <source media="(max-width: 817px)" srcset="images/kpone-banner2_800.jpg">
+            <img src="images/kpone-banner2.jpg" alt="hero image">
+        </picture>
+        <picture>
+            <img src="images/kpone-banner3.jpg" alt="hero image">
+        </picture>
+        <picture>
+            <source media="(max-width: 517px)" srcset="images/kpone-banner4_500.jpg">
+            <img src="images/kpone-banner4.jpeg" alt="hero image">
+        </picture>
+    </div>
+    <div class="weatherSummary">
+        <h2>Weather Summary</h2>
+        <ul>
+            <li>Currently: <span class="currently"></span></li>
+            <li>Temperature: <span class="temp"></span>°F</li>
+            <li>Wind Chill: <span class="windChill"></span></li>
+            <li>Humidity: <span class="humidity"></span>%</li>
+            <li>Wind Speed: <span class="speed"></span> mph</li>
+        </ul>
+    </div>
+    <main>
+        <div id="forecast">
+            <table>
+                <tr>
+                    <th scope="col" id="day1"></th>
+                    <th scope="col" id="day2"></th>
+                    <th scope="col" id="day3"></th>
+                </tr>
+                <tr>
+                    <td><img src=""  id="image1"></td>
+                    <td><img src=""  id="image2"></td>
+                    <td><img src=""  id="image3"></td>
+                </tr>
+                <tr>
+                    <td id="temp1"></td>
+                    <td id="temp2"></td>
+                    <td id="temp3"></td>
+                </tr>
+                <tr>
+                    <td id="description1"></td>
+                    <td id="description2"></td>
+                    <td id="description3"></td>
+                </tr>
+            </table>
+        </div>
+        <section id="purposeSection">
+            <h2>WELCOME</h2>
+            <p>The Kpone Chamber of Commerce is an association of businesses, firms and industries in the Kpone Katamanso district with the aim of protecting and promoting these commercial organizations and ultimately, accelerating the economic and social development of the district.</p>
+            <p>The chamber represents the collective voice of member businesses who are commited to playing leading roles in nurturing the struggling but potentious economy of the Kpone Katamanso municipality. As a support organization, we provide member businesses with resources and facilities to help them expand and contribute something meaningful to the economy. Additionally, we serve as a link between these businesses and the local government.</p>
+            <p>Our vision is to foster an unbreakable bond of cooperation and unity among the various commercial institutions in the district, and to harness the power of this bond to drive the economy.</p>
+        </section>
+        <section id="businessAdvert">
+            <h2>Companies to note</h2>
+            <div class="businessArticle">
+                <h2 id="busName1"></h2>
+                <img id="adimage1" src="" alt="">
+                <p id="text1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus autem ipsum aliquid odio ea rem, corrupti minus labore neque sed ipsam dolorem accusamus omnis impedit fuga exercitationem nisi quaerat accusantium.</p>
+            </div>
+            <div class="businessArticle">
+                <h2 id="busName2"></h2>
+                <img id="adimage2" src="" alt="">
+                <p id="text2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus autem ipsum aliquid odio ea rem, corrupti minus labore neque sed ipsam dolorem accusamus omnis impedit fuga exercitationem nisi quaerat accusantium.</p>
+            </div>
+            <div class="businessArticle">
+                <h2 id="busName3"></h2>
+                <img id="adimage3" src="" alt="">
+                <p id="text3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus autem ipsum aliquid odio ea rem, corrupti minus labore neque sed ipsam dolorem accusamus omnis impedit fuga exercitationem nisi quaerat accusantium.</p>
+            </div>
+            <a href="directory.html">See more...</a>
+        </section>
+        <aside id="upcomingEvents">
+            <button id="openEvents" class="" onclick="toggleList()"><</button>
+            <button id="closeEvents" class="hide" onclick="toggleList()">></button>
+            <ul id="eventBox" class="hide">
+                <h2>Upcoming Events!</h2>
+                <li>Kpone Annual Christmas Fanfare</li>
+                <li>Location: Methodist Church Park</li>
+                <li>Date: 26 Dec 2021</li>
+                <li>Time: 17:00 - 22:00</li>
+            </ul>
+        </aside>
+        <div id="contactSection">
+            <a id="map" href="https://www.google.com/maps/@5.6950284,0.0574334,15.25z" target="_blank"><img src="images/kpone-map.jpg"></a>
+            <div id="socialBox">
+                <div class="social">
+                    <img src="images/location-logo.png"> Head Office: No. 62, Lakoitey St. Shanghai, Kpone
+                </div>
+                <div class="social">
+                    <img src="images/mail-logo.png">Mail us at: <a href="https://mail.yahoo.com/" target="_blank">kcc@yahoo.com</a>
+                </div>
+                <div class="social">
+                    <img src="images/whatsapp-logo.png"> call/whatsApp us on: <a href="h">+23330244566/ +2335454998</a>
+                </div>
+                <div class="social">
+                    <img src="images/facebook-logo.png"> Follow us on: <a href="https://facebook.com/" target="_blank">kponechamberofcommerce</a>
+                </div>
+            </div>
+            <div id="actionBox">
+                <p>Are you an upcoming business owner? Or have you been a player in the business game for a long time. Well, no matter how long your business has been around, we are ever ready to welcome you into our rapidly growing family. CLick the button below to join us now!</p>
+                <a href="join.html"><button>Join</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p >&copy; <span id="currentyear">currentyear</span> | Aaron Quarshie | Ghana | <a id="contact" href="attributions.html" target="blank">Attributions</a></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Gluten', 'Josefin Sans']
+            }
+        });
+    </script>
+</body>
+</html>

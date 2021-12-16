@@ -1,0 +1,58 @@
+{
+    "companies" : [
+        {
+            "name" : "iTERAPLUS SOLUTIONS",
+            "logo" : "https://via.placeholder.com/500x500.jpg/808080/000000?Text=placeholder",
+            "address" : "Shanghai, Kpone, Kpone, Tema, Ghana",
+            "description" : [
+                "- Tower Server Installation and Configuration Services",
+                "- Business/Residential Network (Wired or Wireless) Installation Services",
+                "- Computer Repair & Tune-Up Services"
+            ],
+            "website" : "https://iteraplus.business.site/"
+        },
+
+        {
+            "name" : "Lynbrok Company Limited (Warehouse)",
+            "logo" : "images/lynbrok-logo.png",
+            "address" : "P.M.B 9, Tema Adjacent Toyota Ghana Warehouse, Kpone, Tema, Ghana",
+            "description" : "Lynbrok Company Limited is a wholly-owned indigenous Ghanaian company. It is an emerging and very reputable logistics and warehousing services provider. Incorporated in 2005 and located in the Tema Heavy Industrial enclave.",
+            "website" : "https://lynbrok.com/"
+        },
+        {
+            "name" : "ETG",
+            "logo" : "images/etg-logo.png",
+            "address" : "Kpone Agro Industrial Area, Kpone, Tema, Ghana",
+            "description" : "ETG has developed into a global player with a diverse portfolio of expertise across multiple industries, encompassing Agricultural inputs, logistics, merchandising and processing, supply chain optimization, digital transformation and energy.",
+            "website" : "https://www.etgworld.com/"
+        },
+        {
+            "name" : "Snazzygh",
+            "logo" : "images/snazzy-logo.png",
+            "address" : "Kpone katamanso, Kpone, Tema, Ghana",
+            "description" : "Dealer in cosmetics(hair products) and accessories",
+            "website" : ""
+        },
+        {
+            "name" : "Smart Clik Publishing & I.T. Services",
+            "logo" : "images/smartclik-logo.png",
+            "address" : "Kpone-kokompe, Kpone, Tema, Ghana",
+            "description" : "Contact as for any computer trouble shooting at any where. we also do on-site trouble shooting for schools, churches , offices and any cooperate organisation. Yaour satisfaction is our priority.",
+            "website" : "https://smartclikvisions.com/"
+        },
+        {
+            "name" : "Eben-Kel And Company Limited",
+            "logo" : "https://via.placeholder.com/500x500.jpg/808080/000000?Text=placeholder",
+            "address" : "Haanaa, Kokompe-Kpone, Tema, Ghana",
+            "description" : "Auto Parts store",
+            "website" : "https://eben-kel-and-company-limited.business.site/?utm_source=gmb&utm_medium=referral"
+        },
+        {
+            "name" : "Aggritech Engineering company ltd",
+            "logo" : "images/agritech-logo.png",
+            "address" : "Light industrial Estate, Kokompe Kpone, Tema, Ghana",
+            "description" : "Aggritech Engineering Company Ltd. is a solely Ghanaian-owned company that deals with the fabrication and installation of pipelines, storage tanks, boilers and steel structures. Our operations normally revolve around the mining, construction, energy, oil and gas and maintenance industry. We prioritise using sustainable, eco-friendly and durable materials that are compatible with the climate in this region.",
+            "website" : "https://aggritechengineering.com/"
+        }
+    ]
+}

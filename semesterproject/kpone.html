@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Chamber of commerce site">
+    <title>Kpone Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/site-logo.png" alt="logo">
+        <div class="nameBox">
+            <h1>Kpone Chamber of Commerce</h1>
+            <h3>The largest business family in the region</h3>
+        </div>
+    </header>
+    <nav>
+        <button id="openMenu" class="" onclick="toggleMenu()">&#9776;<span>Menu</span></button>
+        <button id="closeMenu" class="hide" onclick="toggleMenu()">X</button>
+        <ul id="primary-nav" class="hide">
+            <li><a id="link1" class="" href="index.html">Home</a></li>
+            <li><a id="link2" class="active" href="kpone.html">Kpone</a></li>
+            <li><a id="link3" class="" href="join.html">Join</a></li>
+            <li><a id="link4" class="" href="directory.html">Directory</a></li>
+            <li><a id="link5" class="" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="bannerArea">
+        <picture>
+            <source media="(max-width: 517px)" srcset="images/kpone-banner1_500.jpg">
+            <source media="(max-width: 817px)" srcset="images/kpone-banner1_800.jpg">
+            <img src="images/kpone-banner1.jpeg" alt="hero image">
+        </picture>
+        <picture>
+            <source media="(max-width: 517px)" srcset="images/kpone-banner2_500.jpg">
+            <source media="(max-width: 817px)" srcset="images/kpone-banner2_800.jpg">
+            <img src="images/kpone-banner2.jpg" alt="hero image">
+        </picture>
+        <picture>
+            <img src="images/kpone-banner3.jpg" alt="hero image">
+        </picture>
+        <picture>
+            <source media="(max-width: 517px)" srcset="images/kpone-banner4_500.jpg">
+            <img src="images/kpone-banner4.jpeg" alt="hero image">
+        </picture>
+    </div>
+    <main>
+        <section class="article">
+            <h2>KPONE ON SEA</h2>
+            <img src="images/beach-img.jpg" alt="the beach">
+            <p>There is no better way to refer to Kpone, than the name, "Kpone on Sea." This is the nickname the indigens and residents have given to their beloved home, which is a perfect description of the location of the town. Kpone is found in the coastal region of Ghana called Greater Accra, which is occupied predominantly by the ethnic group known as the "Ga". The traditional profession of the Kpone is fishing, which is typical of the Ga tribe who settled in the coastal areas of the country.</p>
+        </section>
+        <section class="article">
+            <h2>Source of Ghana's Revenue</h2>
+            <img src="images/300px-Kpone_Thermal_Power_Station_I.jpg" alt="kpone power station">
+            <p>Many argue, with good reason, that Kpone is the nation's highest revenue generator. This is owing to the fact that many large companies, ranging from food processing companies like Nestle, to Car companies such as Toyota, have situated their factories in the Kpone district. These are but a few of the many that are in the area, and many more are being built. It is apparent that Kpone is highly attractive to investors from all over because of the abundance of land and other natural resources it is blessed with.</p>
+        </section>
+        <aside id="demographics" class="article">
+            <img src="images/250px-Districts_of_the_Greater_Accra_Region_(2012).svg.png" alt="district map">
+            <ul>
+                <li>Population: 417,334</li>
+                <li>Area: 80 sq mi</li>
+                <li>Time zone: UTC+0(GMT)</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p >&copy; <span id="currentyear">currentyear</span> | Aaron Quarshie | Ghana | <a id="contact" href="attributions.html" target="blank">Attributions</a></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Gluten', 'Josefin Sans']
+            }
+        });
+    </script>
+</body>
+</html>

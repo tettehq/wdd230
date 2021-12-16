@@ -1,0 +1,57 @@
+@media  only screen and (min-width: 50em) {
+    nav>#primary-nav {
+        position: static;
+        width: 100%;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav>#primary-nav {
+        display: flex;
+        flex: 1 1 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    nav>#primary-nav li {
+        flex: 1;
+    }
+
+    .bannerArea {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .bannerArea picture:nth-child(2) {
+        display: inline;
+    }
+
+    .weatherSummary {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        border: 1px solid #6e6a6a85;
+    }
+
+    /*main*/
+    main {
+        max-width: 80%;
+        margin: 20px auto 0 auto;
+    }
+
+    main #purposeSection {
+        border: 1px solid #6e6a6a85;
+        box-shadow: 5px 7px 3px rgba(180, 173, 173, 0.7);
+        padding: 1em;
+    }
+
+    /*directory page*/
+    .cardGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*join page*/
+    #levelsdescription {
+        grid-template-columns: 1fr 1fr;
+    }
+}

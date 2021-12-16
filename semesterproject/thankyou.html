@@ -1,0 +1,51 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Chamber of commerce site">
+    <title>Kpone Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/site-logo.png" alt="logo">
+        <div class="nameBox">
+            <h1>Kpone Chamber of Commerce</h1>
+            <h3>The largest business family in the region</h3>
+        </div>
+    </header>
+    <nav>
+        <button id="openMenu" class="" onclick="toggleMenu()">&#9776;<span>Menu</span></button>
+        <button id="closeMenu" class="hide" onclick="toggleMenu()">X</button>
+        <ul id="primary-nav" class="hide">
+            <li><a id="link1" class="" href="index.html">Home</a></li>
+            <li><a id="link2" class="" href="kpone.html">Kpone</a></li>
+            <li><a id="link3" class="" href="join.html">Join</a></li>
+            <li><a class="active" id="link4" class="" href="directory.html">Directory</a></li>
+            <li><a id="link5" class="" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="form-area">
+        <h2>Thank You! Your form has been submitted successfully.</h2>
+    </main>
+    <footer>
+        <p >&copy; <span id="currentyear">currentyear</span> | Aaron Quarshie | Ghana | <a id="contact" href="attributions.html" target="blank">Attributions</a></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="js/directory.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Gluten', 'Josefin Sans']
+            }
+        });
+    </script>
+</body>
+</html>
