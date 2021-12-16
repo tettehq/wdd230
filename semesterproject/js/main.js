@@ -105,13 +105,15 @@ function createForecast(forecastObject) {
     const list = forecastObject.daily;
 
     let threeDays = [];
-    let d = new Date().getDay() - 1;
+    let d = new Date().getDay();
         for (let i = 0; i < list.length; i++) {
             if (i == d) {
-                threeDays[0] = list[i]
-                threeDays[1] = list[i+1]
-                threeDays[2] = list[i+2]
+                threeDays.push(list[i]);
+                threeDays.push(list[i+1])
+                threeDays.push(list[i+2])
             }
+            console.log(threeDays)
+            
         }
 
 
