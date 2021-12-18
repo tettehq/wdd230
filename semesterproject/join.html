@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Chamber of commerce site">
+    <title>Kpone Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <img src="images/site-logo.png" alt="logo">
+        <div class="nameBox">
+            <h1>Kpone Chamber of Commerce</h1>
+            <h3>The largest business family in the region</h3>
+        </div>
+    </header>
+    <nav>
+        <button id="openMenu" class="" onclick="toggleMenu()">&#9776;<span>Menu</span></button>
+        <button id="closeMenu" class="hide" onclick="toggleMenu()">X</button>
+        <ul id="primary-nav" class="hide">
+            <li><a id="link1" class="" href="index.html">Home</a></li>
+            <li><a id="link2" class="" href="kpone.html">Kpone</a></li>
+            <li><a id="link3" class="active" href="join.html">Join</a></li>
+            <li><a id="link4" class="" href="directory.html">Directory</a></li>
+            <li><a id="link5" class="" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="form-area">
+        <h2>Join Our Family</h2>
+        <p>As an association which advocates the promotion of cooperation and unity, we can guarantee that when you and your business becomes a part of this community, you will enjoy:</p>
+        <ul>
+            <li>Exposure to an active and expansive market</li>
+            <li>Opportunities to mentor and be mentored</li>
+            <li>Regular trainings and workshops</li>
+            <li>Opportunities to win awards</li>
+            <li>And many more!</li>
+        </ul>
+        <form name="storm-report" id="form">
+            <fieldset class="itemgroup">
+                <legend>Personal Identification</legend>
+                <label for="firstname" class="label">First name:
+                    <input class="normalinput" type="text" pattern="([A-Za-z])*" id="firstname" name="firstname" placeholder="First name" required>
+                </label>
+                <label for="lastname" class="label">Last name:
+                    <input class="normalinput" type="text" pattern="([A-Za-z])*" id="Lastname" name="Lastname" placeholder="Last name" required>
+                </label>
+                <label for="title" class="label">Title:
+                    <input class="normalinput" type="text" pattern="([A-Za-z])*" id="title" name="title" placeholder="title">
+                </label>
+                <label for="email" class="label">Email:
+                    <input class="normalinput" type="email" id="email" name="email" placeholder="johndoe@anon.com">
+                </label>
+                <label for="pnumber" class="label">Phone number:
+                    <input class="normalinput" type="tel" id="pnumber" name="phone-number" required>
+                </label>
+            </fieldset>
+            <fieldset class="itemgroup">
+                <legend>Business Information</legend>
+                <label for="businessname" class="label">Business name:
+                    <input class="normalinput" type="text" pattern="([A-Za-z])*" id="businessname" name="businessname" placeholder="Business name" required>
+                </label>
+                <label for="address" class="label">Address:
+                    <input class="normalinput" type="text" pattern="\w*" id="address" name="address" placeholder="Address">
+                </label>
+                <label for="website" class="label">Website:
+                    <input class="normalinput" type="url" placeholder="https://example.com"
+                    pattern="https://.*" id="website" name="website">    
+                </label>
+                <label for="description" class="label">Description:
+                    <textarea name="description" id="description" placeholder="Describe the nature of your business"></textarea>
+                </label>
+                <div class="label">Membership Level:
+                    <label class="radio">
+                        <input type="radio" name="level" value="nonprofit"> Non-profit($100)
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="level" value="bronze"> Bronze($200)
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="level" value="silver"> Silver($400)
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="level" value="gold"> Gold($1000)
+                    </label>
+                </div>
+            </fieldset>
+            <label class="label">
+                <input id="submit" type="submit" name="storm-report" value="submit" formaction="./thankyou.html" formtarget="_blank">
+            </label>
+        </form>
+        <div id="levelsdescription">
+            <div class="levelkey">
+                <h2>Non-profit Level</h2>
+                <ul>
+                    <li>First month free trial of mentorship program</li>
+                    <li>Access to two free seminars</li>
+                    <li>Unlimited access to exclusive market</li>
+                </ul>
+            </div>
+            <div class="levelkey">
+                <h2>Bronze Level</h2>
+                <ul>
+                    <li>Six months free trial of mentorship program</li>
+                    <li>Access to seminars for six months</li>
+                    <li>Unlimited access to exclusive market</li>
+                    <li>Six months free trial of producer-consumer matching program</li>
+                </ul>
+            </div>
+            <div class="levelkey">
+                <h2>Silver Level</h2>
+                <ul>
+                    <li>Unlimited access to mentorship program</li>
+                    <li>Unlimited free seminars</li>
+                    <li>Unlimited access to exclusive market</li>
+                    <li>Two years free trial of producer-consumer matching program</li>
+                </ul>
+            </div>
+            <div class="levelkey">
+                <h2>Gold Level</h2>
+                <ul>
+                    <li>Unlimited access to above mentioned services</li>
+                    <li>All expense paid trips to notable business centers</li>
+                    <li>And many more!</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p >&copy; <span id="currentyear">currentyear</span> | Aaron Quarshie | Ghana | <a id="contact" href="attributions.html" target="blank">Attributions</a></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="js/join.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Gluten', 'Josefin Sans']
+            }
+        });
+    </script>
+</body>
+</html>
