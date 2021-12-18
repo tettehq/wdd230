@@ -106,14 +106,10 @@ function createForecast(forecastObject) {
 
     let threeDays = [];
     let d = new Date().getDay();
-        for (let i = 0; i < list.length; i++) {
-            if (i == d) {
-                threeDays.push(list[i]);
-                threeDays.push(list[i+1])
-                threeDays.push(list[i+2])
-            }
-            console.log(threeDays)
-            
+    console.log(d)
+        for (let i = 0; i < 3; i++) {
+            threeDays.push(list[i]);
+            console.log(threeDays);
         }
 
 
@@ -123,6 +119,8 @@ function createForecast(forecastObject) {
         const weekDay = dateObject.toLocaleString("default", { weekday: "short" })
         return weekDay
     }
+
+    console.log(toDate(forecastObject.daily[1].dt))
 
     document.querySelector("#day1").textContent = toDate(threeDays[0].dt);
     document.querySelector("#day2").textContent = toDate(threeDays[1].dt);
@@ -137,9 +135,9 @@ function createForecast(forecastObject) {
     document.querySelector("#image2").setAttribute("alt", threeDays[1].weather[0].description);
     document.querySelector("#image3").setAttribute("alt", threeDays[2].weather[0].description);
 
-    document.querySelector("#temp1").textContent = `${threeDays[0].temp.max}°F`;
-    document.querySelector("#temp2").textContent = `${threeDays[1].temp.max}°F`;
-    document.querySelector("#temp3").textContent = `${threeDays[2].temp.max}°F`;
+    document.querySelector("#temp1").textContent = `${threeDays[0].temp.day}°F`;
+    document.querySelector("#temp2").textContent = `${threeDays[1].temp.day}°F`;
+    document.querySelector("#temp3").textContent = `${threeDays[2].temp.day}°F`;
     
     document.querySelector("#description1").textContent = `${threeDays[0].weather[0].description}`;
     document.querySelector("#description2").textContent = `${threeDays[1].weather[0].description}`;
