@@ -1,4 +1,4 @@
-@media  only screen and (min-width: 50em) {
+@media  only screen and (min-width: 400px) {
     nav>#primary-nav {
         position: static;
         width: 100%;
@@ -53,5 +53,15 @@
     /*join page*/
     #levelsdescription {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /*kpone page*/
+    #demographics {
+        position: absolute;
+        top: 25%;
+        right: 0;
+        border: 5px ridge #DBD56E;
+        background-color: #ccc761d5;
+        color: #FC7753;
     }
 }

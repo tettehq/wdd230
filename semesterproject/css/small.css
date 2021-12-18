@@ -221,7 +221,7 @@ section#businessAdvert {
 #contactSection >#map {
     justify-self: center;
     align-self: center;
-    width: 300px;
+    width: 100%;
 }
 
 #contactSection >#map > img {
@@ -390,9 +390,6 @@ section.article:nth-child(2) img {
 }
 
 #demographics {
-    position: absolute;
-    top: 25%;
-    right: 0;
     border: 5px ridge #DBD56E;
     background-color: #ccc761d5;
     color: #FC7753;
