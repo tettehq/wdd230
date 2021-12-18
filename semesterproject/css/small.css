@@ -234,6 +234,9 @@ section#businessAdvert {
     margin: 5px;
 }
 
+.social {
+    width: 100%;
+}
 #socialBox {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
